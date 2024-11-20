@@ -45,7 +45,8 @@ def search_student():
 
 #changing port from (5000 to 8000).
 if __name__== "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+
 #create two directories static and template.
 
 #final-> Deployment of app(webpage) on Heroku.
