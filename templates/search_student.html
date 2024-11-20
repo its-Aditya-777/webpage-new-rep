@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Student</title>
+</head>
+<body>
+    <h1>Search Student</h1>
+    <form method="POST">
+        Search by Name or Roll Number: <input type="text" name="query" required><br>
+        <button type="submit">Search</button>
+    </form>
+    <a href="\">Go back</a>
+    {% if students %}
+        <h2>Search Results:</h2>
+        <ul>
+        {% for student in students %}
+            <li>Name: {{ student['Name'] }}, Roll Number: {{ student['Roll Number'] }}, 
+                Phone: {{ student['Phone Number'] }}, GPA: {{ student['Cumulative GPA'] }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

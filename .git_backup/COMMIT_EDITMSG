@@ -1,0 +1,10 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#	deleted:    templates/base.html
+#	deleted:    templates/index.html
+#	deleted:    templates/update.html
+#

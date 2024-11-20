@@ -1,0 +1,2 @@
+This is a file stored in static and we can access it.
+Hello from Aditya Verma.
