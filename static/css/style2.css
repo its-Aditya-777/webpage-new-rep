@@ -38,7 +38,7 @@ form input[type="number"] {
 }
 
 /* Button styling */
-form input[type="submit"] {
+button{
     background-color: #00796b; /* Teal background */
     color: white;
     border: none;

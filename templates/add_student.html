@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}"/><!-- Link the CSS file -->
 </head>
 <body>
-    <div class="container">
-        <h1>Add Student</h1>
-        <form>
-            <label for="name">Name:</label><br>
+    <h1>Add Student</h1>
+    <form method="POST">
+        <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" placeholder="Enter name" required><br>
 
             <label for="roll">Roll Number:</label><br>
@@ -21,10 +20,9 @@
 
             <label for="gpa">Cumulative GPA:</label><br>
             <input type="number" id="gpa" name="gpa" placeholder="Enter GPA" step="0.01" required><br>
-
-            <input type="submit" value="Add">
-        </form>
-        <a href="/">Go back</a>
-    </div>
+        <button type="submit">Add</button>
+    </form>
+    <a href="\">Go back</a>
 </body>
 </html>
+
