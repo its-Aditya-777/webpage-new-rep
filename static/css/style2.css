@@ -1,0 +1,69 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Form container styling */
+.container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    width: 400px;
+    text-align: center;
+}
+
+/* Form heading styling */
+h1 {
+    color: #00796b; /* Teal color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+form input[type="text"], 
+form input[type="number"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+form input[type="submit"] {
+    background-color: #00796b; /* Teal background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Back link styling */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00796b; /* Teal */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d40; /* Darker teal on hover */
+}

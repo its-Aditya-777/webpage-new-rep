@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <title>Student Data Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/><!-- Link your CSS file -->
 </head>
 <body>
-    <h1>Student Data Management</h1>
-    <a href="\add">Add Student</a><br>
-    <a href="\search">Search Student</a>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Student Data Management</h1>
+    </div>
+
+    <!-- Centered boxes -->
+    <div class="container">
+        <div class="box">
+            <a href="\add">Add Student</a>
+        </div>
+        <div class="box">
+            <a href="\search">Search Student</a>
+        </div>
+    </div>
 </body>
 </html>
