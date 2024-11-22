@@ -1,55 +1,67 @@
-/* General styles for the body */
+/* General body styling */
 body {
-    background-color: #e0f7fa; /* Soft cyan background */
-    font-family: 'Arial', sans-serif; /* Clean and modern font */
-    color: #333; /* Dark text for readability */
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light teal background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #00796b; /* Teal background */
+    padding: 15px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for navbar */
+}
+
+.navbar h1 {
+    color: white; /* White text for the title */
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Centered box container styling */
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full screen height */
+    gap: 20px; /* Space between the boxes */
+    margin-top: 100px; /* Push the boxes below the navbar */
 }
 
-/* Container for the content */
-.container {
-    background-color: #ffffff; /* White card-like background */
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+/* Individual box styling */
+.box {
+    background-color: white; /* White box background */
+    padding: 30px 50px;
     text-align: center;
-    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+    cursor: pointer;
 }
 
-/* Title styling */
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #00796b; /* Teal for the title */
-    margin-bottom: 20px;
+.box:hover {
+    transform: translateY(-5px); /* Hover lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
 }
 
-/* Links styling */
-a {
-    display: inline-block;
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #004d40; /* Darker teal */
+/* Box text styling */
+.box a {
     text-decoration: none;
-    border: 2px solid transparent;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: 0.3s ease; /* Smooth hover effect */
+    color: #00796b; /* Teal color for links */
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-/* Hover effect for links */
-a:hover {
-    background-color: #00796b; /* Teal background */
-    color: #ffffff; /* White text */
-    border-color: #004d40; /* Border matches the background */
-}
-
-/* Link spacing */
-a + a {
-    margin-top: 10px;
+.box a:hover {
+    color: #004d40; /* Darker teal on hover */
 }
