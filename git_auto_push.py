@@ -9,10 +9,10 @@ class GitAutoPushHandler(FileSystemEventHandler):
             print(f"{event.src_path} has been modified. Committing and pushing changes...")
             os.system("git add students.csv")
             os.system('git commit -m "Auto-update students.csv"')
-            os.system("git push origin main")  # Replace 'main' with your branch name
+            os.system("git push origin main")  
 
 if __name__ == "__main__":
-    # Path to monitor, current directory ('.')
+    # Path to monitor, current directory ("")
     path = "C:/Users/aditya verma/Desktop/Adi_webpage"
     event_handler = GitAutoPushHandler()
     observer = Observer()
