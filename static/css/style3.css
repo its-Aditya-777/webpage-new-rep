@@ -1,0 +1,100 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #00695c; /* Teal color */
+    padding: 15px 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.search-container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 50%;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-container h1 {
+    font-size: 1.8rem;
+    color: #00695c; /* Teal heading color */
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #81c784; /* Light green border */
+    padding-bottom: 10px;
+}
+
+.search-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #37474f; /* Dark gray */
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-container input[type="submit"] {
+    background-color: #00796b; /* Teal button color */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+.search-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00796b; /* Teal link color */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-container a:hover {
+    color: #004d40; /* Darker teal on hover */
+}
+
+/* Search Results Styling */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #37474f; /* Dark gray text */
+}
+
+#result h2 {
+    color: #2e7d32; /* Dark green heading */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
